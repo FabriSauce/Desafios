@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 });
 
 
-function mostrarTablaDeMultiplicación(num) {
+function showMultiplicationTable(num) {
 
     for (let i = 0; i <= 10; i++) {
 
@@ -21,7 +21,7 @@ function mostrarTablaDeMultiplicación(num) {
 
 rl.question('Dime que tabla de multiplicar quieres saber? ', (num) => {
 
-    mostrarTablaDeMultiplicación(num);
+    showMultiplicationTable(num);
 
     rl.close();
 })

@@ -7,17 +7,17 @@ const rl = readline.createInterface({
     output: process.stdout // Establece la salida estándar (terminal)
 });
 
-function calcularFactorial(num) {
+function calculateFactorial(num) {
     if (num === 0 || num === 1) {
       return 1;
     } else {
-      return num * calcularFactorial(num - 1);
+      return num * calculateFactorial(num - 1);
     }
   }
   // Ejemplo
   rl.question('Por favor, ingresa un número para calcular su factorial: ', (num) =>{
 
-    let result = calcularFactorial(num);
+    let result = calculateFactorial(num);
 
     console.log(`El factorial de ${num} es ${result}`);
 

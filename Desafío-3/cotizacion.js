@@ -9,9 +9,9 @@ const rl = readline.createInterface({
 
 function dolarsConversor(dolars) {
 
-    var cotizacionDolar = 901
+    var priceDolar = 901
 
-    var pesos = dolars * cotizacionDolar;
+    var pesos = dolars * priceDolar;
 
     return pesos;
     
@@ -19,9 +19,9 @@ function dolarsConversor(dolars) {
 
 rl.question('Ingresa cantidad de dolares que queres convertir: ', (dolarsInExistence) =>{
 
-    let valorEnPesos = dolarsConversor(dolarsInExistence);
+    let valueInPesos= dolarsConversor(dolarsInExistence);
     
-    console.log(`${dolarsInExistence} dólares es $ ${valorEnPesos} pesos`);
+    console.log(`${dolarsInExistence} dólares es $ ${valueInPesos} pesos`);
 
     rl.close();
 })

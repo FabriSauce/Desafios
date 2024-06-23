@@ -7,18 +7,18 @@ const rl = readline.createInterface({
     output: process.stdout // Establece la salida estándar (terminal)
 });
 
-function calcularIMC(peso, altura) {
+function calculateIMC(weight, height) {
 
-    let imc = peso / (altura * altura);
+    let imc = weight / (height * height);
     
     return imc;
     
 }
-rl.question('Por favor, ingresa tu peso: ',(peso) =>{
+rl.question('Por favor, ingresa tu peso: ',(weight) =>{
 
-    rl.question('Por favor, ingresa tu altura: ',(altura) => {
+    rl.question('Por favor, ingresa tu altura: ',(height) => {
 
-        let imc = calcularIMC(peso, altura);
+        let imc = calculateIMC(weight, height);
         
         console.log(`Tu índice de masa corporal es de ${imc}`);
 
